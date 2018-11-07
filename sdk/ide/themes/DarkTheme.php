@@ -8,6 +8,11 @@ use ide\utils\FileUtils;
 
 class DarkTheme extends AbstractTheme
 {
+    private $colors = [
+        "#333333" => "#ffffff",
+        "blue"    => "#5280c9"
+    ];
+    
     /**
      * @return string
      */
@@ -25,6 +30,11 @@ class DarkTheme extends AbstractTheme
     }
 
     public function getCodeEditorCssFile(): string
+    {
+        
+    }
+    
+    public function colorAlias(string $color): string
     {
         
     }
